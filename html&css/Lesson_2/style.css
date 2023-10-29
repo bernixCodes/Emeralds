@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+body {
+  background: hsl(257, 40%, 49%);
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header img {
+  object-fit: contain;
+  width: 150px;
+  padding-bottom: 20px;
+}
+.middle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.middle img {
+  object-fit: contain;
+  width: 90%;
+}
+
+.data {
+  color: #fff;
+  text-align: center;
+}
+
+.data h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.data p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #eee;
+}
+
+.btn {
+  padding: 15px 30px;
+  width: 180px;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  box-shadow: 3px 5px rgba(58, 54, 54, 0.6);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  gap: 10px;
+}
+ion-icon {
+  color: white;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+ion-icon:hover {
+  color: hsl(300, 69%, 71%);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (min-width: 700px) {
+  header img {
+    width: 250px;
+    padding-bottom: 40px;
+  }
+
+  .data h1 {
+    font-size: 32px;
+  }
+  .data p {
+    font-size: 26px;
+    font-weight: 400;
+    color: #eee;
+  }
+  .btn {
+    padding: 20px 30px;
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .middle {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+  }
+  header img {
+    padding-top: 20px;
+  }
+  .data {
+    text-align: start;
+  }
+  .btn {
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+    font-size: 20px;
+  }
+  footer {
+    justify-content: end;
+  }
+  .container {
+    background: url("./images/bg-desktop.svg");
+  }
+}
